@@ -1,4 +1,7 @@
-# Welcome on my Profile - ric3-12!
+<div align="center">
+    <h1>Welcome on my Profile - ric3-12!</h1>
+    <p>BEEP BOOP BOOP BAP BEE BEE BOOP BOOP BAP BOO BAP</p>
+</div>
 
-**BEEP BOOP BOOP BAP BEE BEE BOOP BOOP BAP BOO BAP** ![Screenshot](spongebob.jpg)
+[Screenshot](spongebob.jpg)
 
