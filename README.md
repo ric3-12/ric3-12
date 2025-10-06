@@ -3,6 +3,6 @@
     <p>BEEP BOOP BOOP BAP BEE BEE BOOP BOOP BAP BOO BAP</p>
 </div>
 
-![Screenshot](funny_spongebob_meme.jpg)
+![Screenshot](funny_spongebob_meme_1.jpg)
 
 
