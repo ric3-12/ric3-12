@@ -5,7 +5,7 @@
 
 <div align="center">
     
-![Screenshot](funny_spongebob_meme_1.jpg)
+![Screenshot](github_profile_banner.svg)
 
 
 
