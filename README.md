@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Welcome on my Profile - ric3-12!</h1>
+    <h1>Welcome on my Profile!</h1>
     <p></p>
 </div>
 
