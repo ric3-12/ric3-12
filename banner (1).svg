@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0a1f"/>
+      <stop offset="0.65" stop-color="#1a0f33"/>
+      <stop offset="1" stop-color="#2a1240"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="0.55" stop-color="#ff5e8a"/>
+      <stop offset="1" stop-color="#ff2d95" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sunDisc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd25e"/>
+      <stop offset="0.5" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ff2d95"/>
+    </linearGradient>
+    <radialGradient id="nebA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff2d95" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#ff2d95" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22e3d6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#22e3d6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#5ef0e4"/>
+      <stop offset="0.55" stop-color="#1c8fa6"/>
+      <stop offset="1" stop-color="#14325e"/>
+    </radialGradient>
+    <radialGradient id="galaxy" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6e0"/>
+      <stop offset="0.15" stop-color="#ffc58a" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#ff5ea8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff5ea8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff2d95"/>
+    </linearGradient>
+    <linearGradient id="subtitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff4fa3"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2d95" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff2d95" stop-opacity="0.95"/>
+    </linearGradient>
+    <clipPath id="discClip">
+      <circle cx="990" cy="285" r="80"/>
+    </clipPath>
+    <clipPath id="sunClip">
+      <rect x="880" y="160" width="220" height="140"/>
+    </clipPath>
+    <g id="cube">
+      <polygon points="0,-9 9,-4.5 0,0 -9,-4.5" fill="#ffd0e6"/>
+      <polygon points="-9,-4.5 0,0 0,10 -9,5.5" fill="#ff5ea8"/>
+      <polygon points="9,-4.5 0,0 0,10 9,5.5" fill="#b8237a"/>
+    </g>
+    <g id="palm" fill="#0a0716">
+      <path d="M0 0 C2 -30 4 -60 2 -95 L6 -95 C9 -60 7 -30 5 0 Z"/>
+      <path d="M4 -95 C-10 -102 -28 -100 -40 -88 C-26 -96 -12 -96 2 -92 Z"/>
+      <path d="M4 -95 C16 -104 34 -104 46 -92 C32 -98 18 -98 6 -92 Z"/>
+      <path d="M4 -95 C-6 -112 -22 -118 -34 -116 C-20 -110 -8 -104 2 -94 Z"/>
+      <path d="M4 -95 C12 -114 26 -122 40 -122 C26 -114 14 -106 6 -94 Z"/>
+      <path d="M4 -95 C0 -110 2 -124 8 -132 C6 -118 6 -106 5 -94 Z"/>
+    </g>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.03">
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="900" y1="0" x2="900" y2="360"/>
+  </g>
+
+  <!-- Nebel -->
+  <ellipse cx="930" cy="140" rx="260" ry="170" fill="url(#nebA)"/>
+  <ellipse cx="760" cy="230" rx="180" ry="110" fill="url(#nebB)"/>
+
+  <!-- Sterne -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="40" r="1.4" opacity="0.8"/>
+    <circle cx="210" cy="300" r="1" opacity="0.4"/>
+    <circle cx="260" cy="70" r="1.2" opacity="0.6"/>
+    <circle cx="380" cy="30" r="1" opacity="0.5"/>
+    <circle cx="455" cy="330" r="1.3" opacity="0.4"/>
+    <circle cx="520" cy="60" r="1.6" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="270" r="1" opacity="0.35"/>
+    <circle cx="640" cy="120" r="1.2" opacity="0.7"/>
+    <circle cx="700" cy="40" r="1" opacity="0.5"/>
+    <circle cx="790" cy="90" r="1.1" opacity="0.6"/>
+    <circle cx="830" cy="30" r="1.5" opacity="0.8"/>
+    <circle cx="960" cy="40" r="1" opacity="0.5"/>
+    <circle cx="1010" cy="130" r="1.2" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="30" r="1.3" opacity="0.7"/>
+    <circle cx="1160" cy="110" r="1" opacity="0.5"/>
+    <circle cx="700" cy="160" r="0.9" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.05;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="180" r="0.9" opacity="0.4"/>
+    <circle cx="420" cy="150" r="0.9" opacity="0.35"/>
+  </g>
+
+  <!-- Sonnenuntergang (Vice-City-Farben) -->
+  <circle cx="990" cy="285" r="150" fill="url(#sun)" opacity="0.55"/>
+  <g clip-path="url(#sunClip)">
+    <circle cx="990" cy="285" r="80" fill="url(#sunDisc)"/>
+    <g fill="#1d1036" clip-path="url(#discClip)">
+      <rect x="880" y="250" width="220" height="4"/>
+      <rect x="880" y="262" width="220" height="5"/>
+      <rect x="880" y="275" width="220" height="6"/>
+      <rect x="880" y="289" width="220" height="8"/>
+    </g>
+  </g>
+
+  <!-- Spiralgalaxie (Astrofotografie) -->
+  <g transform="translate(1065 70) rotate(-25)">
+    <ellipse rx="68" ry="19" fill="url(#galaxy)"/>
+    <ellipse rx="42" ry="10" fill="none" stroke="#ffc2e0" stroke-opacity="0.25"/>
+    <ellipse rx="6" ry="3" fill="#fff8ea"/>
+  </g>
+
+  <!-- Planet mit Container-Cluster im Orbit (Plattformentwicklung) -->
+  <circle cx="790" cy="150" r="48" fill="url(#planet)"/>
+  <path d="M755 136 q35 -10 70 4" stroke="#b9fff8" stroke-opacity="0.3" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M752 162 q38 10 76 -2" stroke="#b9fff8" stroke-opacity="0.18" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g transform="rotate(-14 790 150)">
+    <ellipse cx="790" cy="150" rx="110" ry="30" fill="none" stroke="#ff5ea8" stroke-opacity="0.5" stroke-dasharray="4 6"/>
+    <g>
+      <use href="#cube"/>
+      <animateMotion dur="14s" repeatCount="indefinite" path="M680 150 a110 30 0 1 0 220 0 a110 30 0 1 0 -220 0"/>
+    </g>
+    <g>
+      <use href="#cube"/>
+      <animateMotion dur="14s" begin="-4.67s" repeatCount="indefinite" path="M680 150 a110 30 0 1 0 220 0 a110 30 0 1 0 -220 0"/>
+    </g>
+    <g>
+      <use href="#cube"/>
+      <animateMotion dur="14s" begin="-9.33s" repeatCount="indefinite" path="M680 150 a110 30 0 1 0 220 0 a110 30 0 1 0 -220 0"/>
+    </g>
+  </g>
+
+  <!-- Palmen -->
+  <use href="#palm" transform="translate(905 312) scale(0.9)"/>
+  <use href="#palm" transform="translate(940 316) scale(0.65) rotate(6)"/>
+  <use href="#palm" transform="translate(1050 304) scale(0.75) rotate(-5)"/>
+
+  <!-- Hügel + Rennstrecke (Motorsport) -->
+  <path d="M640 360 C760 318 880 322 980 306 C1070 292 1130 280 1200 276 L1200 360 Z" fill="#0a0716"/>
+  <path d="M640 362 C780 336 900 338 1000 326 C1090 315 1150 306 1210 300" stroke="#24163f" stroke-width="12" fill="none"/>
+  <path d="M640 362 C780 336 900 338 1000 326 C1090 315 1150 306 1210 300" stroke="#ff5ea8" stroke-opacity="0.55" stroke-width="1.2" stroke-dasharray="10 10" fill="none"/>
+  <g>
+    <rect x="-60" y="-2" width="60" height="4" rx="2" fill="url(#trail)"/>
+    <circle r="2.6" fill="#ff7ab8"/>
+    <animateMotion dur="5s" repeatCount="indefinite" rotate="auto" path="M640 362 C780 336 900 338 1000 326 C1090 315 1150 306 1210 300"/>
+  </g>
+
+  <!-- Teleskop -->
+  <g stroke="#b99ad8" stroke-width="3" stroke-linecap="round">
+    <line x1="1140" y1="258" x2="1124" y2="286"/>
+    <line x1="1140" y1="258" x2="1156" y2="286"/>
+    <line x1="1140" y1="258" x2="1140" y2="288"/>
+  </g>
+  <line x1="1144" y1="258" x2="1110" y2="210" stroke="#f3e6ff" stroke-width="13" stroke-linecap="round"/>
+  <line x1="1115" y1="217" x2="1104" y2="202" stroke="#22e3d6" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="1140" cy="258" r="5" fill="#7a5aa6"/>
+
+  <!-- Text -->
+  <rect x="70" y="112" width="4" height="118" rx="2" fill="url(#accent)"/>
+  <text x="96" y="168" font-size="54" font-weight="700" fill="#ffffff">Hey! Ich bin Janis</text>
+  <text x="98" y="204" font-size="20" fill="url(#subtitle)" letter-spacing="0.5">Informatiker EFZ · Plattformentwicklung</text>
+
+  <g font-size="13">
+    <!-- 49ers -->
+    <rect x="98" y="222" width="80" height="26" rx="13" fill="#3a0d14" stroke="#b3995d"/>
+    <g transform="translate(115 235) rotate(-30)">
+      <ellipse rx="7.5" ry="4.6" fill="#8b4a2b"/>
+      <line x1="-2.5" y1="0" x2="2.5" y2="0" stroke="#fff" stroke-width="1"/>
+      <line x1="-1" y1="-1.3" x2="-1" y2="1.3" stroke="#fff" stroke-width="0.8"/>
+      <line x1="1" y1="-1.3" x2="1" y2="1.3" stroke="#fff" stroke-width="0.8"/>
+    </g>
+    <text x="128" y="239.5" fill="#f2d48a">49ers</text>
+    <!-- Liverpool -->
+    <rect x="186" y="222" width="120" height="26" rx="13" fill="#3a0a12" stroke="#c8102e"/>
+    <circle cx="202" cy="235" r="6.2" fill="#ffffff"/>
+    <polygon points="202,232.2 204.7,234.1 203.7,237.2 200.3,237.2 199.3,234.1" fill="#222"/>
+    <text x="214" y="239.5" fill="#ffd6dc">Liverpool FC</text>
+    <!-- Hobbys -->
+    <g fill="#ffd6ea">
+      <rect x="314" y="222" width="118" height="26" rx="13" fill="#24123b" stroke="#6a2a6e"/>
+      <text x="373" y="239.5" text-anchor="middle">Astrofotografie</text>
+      <rect x="440" y="222" width="94" height="26" rx="13" fill="#24123b" stroke="#6a2a6e"/>
+      <text x="487" y="239.5" text-anchor="middle">Motorsport</text>
+      <rect x="542" y="222" width="72" height="26" rx="13" fill="#24123b" stroke="#6a2a6e"/>
+      <text x="578" y="239.5" text-anchor="middle">Gaming</text>
+    </g>
+  </g>
+</svg>
