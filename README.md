@@ -5,7 +5,7 @@
 
 <div align="center">
     
-![Screenshot](github_profile_banner.svg)
+![Screenshot](banner.svg)
 
 
 
